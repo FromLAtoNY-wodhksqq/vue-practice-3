@@ -7,9 +7,11 @@ interface OldPaymentProcessor {
 class NewPaymentGateway {
     makePayment(value: number): void {
         console.log(`${value}원을 새 결제 게이트웨이로 처리함`);
+
     }
 }
-
+//wntjr
+  
 // 3. Adapter (Target 인터페이스 구현 + Adaptee를 내부에서 호출)
 class PaymentAdapter implements OldPaymentProcessor {
     private gateway: NewPaymentGateway;
